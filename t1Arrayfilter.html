@@ -1,0 +1,99 @@
+<!--
+    
+    filter = bodo othba choto sobgulu ber kore dibe,,,,, multiple ber kore dibe
+
+-->
+<h1>
+
+    Module
+
+</h1>
+
+
+<script>
+
+
+    var Mehedi = {
+        Name: "Mehedi Hasan",
+        Age: "34",
+        Blood: "A+'ve"
+    } 
+
+
+    for(var newValueMehedi in Mehedi){
+        document.write(Mehedi[newValueMehedi]+' ');
+    }
+
+
+</script>
+<script> 
+
+
+
+var mark = ['4', '1','9','8','7','3','5','2','12'];
+
+
+let result = mark.filter(function(bodoguluBerkoro){
+
+    return bodoguluBerkoro>9;
+
+});
+
+
+document.write(result);
+
+    
+</script>
+
+
+
+<h1>
+
+   Practise
+
+</h1>
+
+<script>
+
+
+
+var arraY = ["45","34","56","672","33","46","57","78","88","990"];
+
+var filterKoro =  arraY.filter(function(resultBerkoro){
+
+
+return resultBerkoro<45;
+
+
+});
+
+
+document.write(filterKoro);
+
+</script>
+
+<h1>Return</h1>
+
+
+<script>
+
+
+
+var arraY = ["45", "34", "56", "672", "33", "46", "57", "78", "88", "990"];
+
+var filterKoro = arraY.filter(resultBerkoro => resultBerkoro < 45);
+
+document.write(filterKoro);
+</script>
+
+<h1>Without Return by Me</h1>
+
+<script>
+
+    var markss = ["45", "34", "56", "672", "33", "46", "57", "78", "88", "990"];
+
+
+    var filterKoro = markss.filter(waitKortesi => waitKortesi>50);
+
+    document.write(filterKoro);
+</script>

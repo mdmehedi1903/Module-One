@@ -1,0 +1,40 @@
+<script>
+
+    function calculateGrade(studentScore){
+    
+        
+        switch(true){
+    
+            case(studentScore>=90 && 100>=studentScore):
+            document.write("Grade: A");
+            break;
+    
+            case(studentScore>=80 && studentScore<=89):
+            document.write("Grade: B");
+            break;
+    
+            case(studentScore>=70 && studentScore<=79):
+            document.write("Grade: C");
+            break;
+    
+            case(studentScore>=60 && studentScore<=69):
+            document.write("Grade: D");
+            break;
+    
+            case(studentScore<60):
+            document.write("Grade: F");
+            break;
+    
+            case(studentScore>100):
+            document.write("You entered wrong value");
+            break;
+    
+        }
+    
+    
+    }
+    
+    calculateGrade(parseInt(prompt("Enter a Value to check Grade!")));
+    
+    
+    </script>

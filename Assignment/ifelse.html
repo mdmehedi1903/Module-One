@@ -1,0 +1,60 @@
+<h1> Module 01 Assingment </h1>
+
+<h2>1) Topic: Online Store Discount Calculator (If-Else Statement)</h2>
+
+<script>
+
+function amount(purchaseAmount){
+    if(purchaseAmount>=50 && 100>=purchaseAmount){
+
+        var discount = 5;
+        var discountAmount = purchaseAmount/100*discount;
+        var discountedAmount = purchaseAmount-discountAmount;
+
+        document.write('Discounted Amount = '+discountedAmount.toFixed(2)+'$<br/>');
+        document.write('Total Amount = '+purchaseAmount.toFixed(2)+'$<br/>');
+        document.write('Discount Amount = '+discountAmount.toFixed(2)+'$<br/>');
+        
+    }
+
+    else if(purchaseAmount>=100 && 200>=purchaseAmount){
+
+    var discount = 10;
+    var discountAmount = purchaseAmount/100*discount;
+    var discountedAmount = purchaseAmount-discountAmount;
+
+    document.write('Discounted Amount = '+discountedAmount.toFixed(2)+'$<br/>');
+    document.write('Total Amount = '+purchaseAmount.toFixed(2)+'$<br/>');
+    document.write('Discount Amount = '+discountAmount.toFixed(2)+'$<br/>');
+
+    }
+
+    else if(purchaseAmount>200){
+
+    var discount = 15;
+    var discountAmount = purchaseAmount/100*discount;
+    var discountedAmount = purchaseAmount-discountAmount;
+
+    document.write('Discounted Amount = '+discountedAmount.toFixed(2)+'$<br/>');
+    document.write('Total Amount = '+purchaseAmount.toFixed(2)+'$<br/>');
+    document.write('Discount Amount = '+discountAmount.toFixed(2)+'$<br/>');
+
+    }
+
+    else {
+        document.write("Alas! No discount applied!");
+    }
+}
+amount(parseInt(prompt('Enter an amount  to check discount')));
+
+</script>
+
+
+
+<script>
+
+</script>
+
+
+
+
