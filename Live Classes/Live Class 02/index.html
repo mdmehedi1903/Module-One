@@ -1,14 +1,98 @@
+<h3> Live Class 02 by Rabbil</h3>
 <script>
 
+//Function Write
+function functionWrite(){
+    document.write("#. Hello! Function");
+}
+functionWrite();
 
-//tradintional way function
-//Naming convenstion = verb akare likhte hobe
-function onLogin(){
+//Function Naming Convention
+function nameHobeVerb(){
+    document.write('<br>#. '+"You should use function name as verb");
+}
+nameHobeVerb();
+
+//Function Signature
+function functionSignature(){
+    document.write('<br>#. '+"It's mean the  text <b>function</b>, <b>function name ex: mehedi </b>, <b>async</b>, anything.");
+}
+functionSignature();
+
+
+//Regular Function
+function regularFunction(){
+    document.write('<br>#. '+"Hello! Regular Function.");
+}
+regularFunction();
+
+//Arrow Function
+arrowFunction=()=>{
+    document.write('<br>#. '+"Hello! Arrow Function.");
+}
+arrowFunction();
+
+//async = Async uses to ensure running order. like which will ring first? This matter is ensured by async
+async function funOne(){
+    await fetch("https://dummyjson.com/products/1");
+}
+funOne();
+
+async function funTwo(){
+    await fetch("https://dummyjson.com/products/2");
+}
+funTwo();
+
+
+//Parameter
+function paraMeter(x,y){
+    z = x+y;
+    document.write('<br>'+'#. '+z);
+}
+
+paraMeter(3,3);
+
+
+//Parameter all in one
+function paraMeterAll(...m){
+    
+    var plus1 = m[1]+m[2];
+
+    document.write('<br>'+'#. '+m);
+    document.write('<br>'+'#. '+plus1);
+
+    
 
 }
 
-function onLogin(){
+paraMeterAll(3,4,3,4,4,56,4,54,455,64,54);
 
+
+
+//Return
+function returnLearn(u,t){
+  
+    return u+t;
+    
 }
+
+var newValue = returnLearn(0,6)+8;
+
+document.write('<br>'+'#. '+newValue);
+
+
+//Immediately Invoked Function = IIF,,, Instan start function, no need to call function
+//() first is for create function
+//() second is for call function
+//()=>{} its body = add it first one
+
+
+(async()=>{
+    document.write('<br>'+'#. Hello! IIF');
+})()
+
 
 </script>
+
+
+
